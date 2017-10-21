@@ -1,0 +1,307 @@
+@import url('./normalize.less');
+@import url('./reset.less');
+@import url('./setting.less');
+
+
+
+@media screen and (width: 320px) {
+    html {
+        font-size: 320px/20;
+    }
+}
+
+html,body {
+    width: 100%;
+}
+header {
+    width: 100%;
+    height: (88rem/32);
+    background-color: @headerBgc;
+    position: relative;
+    h2 {
+        line-height: (88rem/32);
+        font-size: (29rem/32);
+        color: @headerCol;
+        margin-left: (56rem/32);
+    }
+    .back {
+        position: absolute;
+        left: (20rem/32);
+        top: (28rem/32);
+        width: (20rem/32);
+        height: (32rem/32);
+        background-image: url('../image/back.png');
+        background-repeat: no-repeat;
+        background-size: (22rem/32) (33rem/32);
+    }
+}
+main {
+    width: 100%;
+    padding: 0 (27rem/32);
+    box-sizing: border-box;
+    background-color: @mainBot;
+    .main-top {
+        width: 100%;
+        height: (79rem/32);
+        line-height: (79rem/32);
+        h2 {
+            float: left;
+            font-size: (27rem/32);
+            color: @mainCol;
+        }
+        span {
+            float: right;
+            font-size: (24rem/32);
+        }
+    }
+    .main-bot {
+        width: 100%;
+        height: (314rem/32);
+        background-color: @headerCol;
+        box-sizing: border-box;
+        position: relative;
+        overflow: hidden;
+        border-radius: (15rem/32);
+        .all {
+            padding: (34rem/32) (31rem/32);
+            box-sizing: border-box;
+            width: 100%;
+            height: (232rem/32);
+            background-color: @mainGre;
+            position: relative;
+            .biao {
+                width: (22rem/32);
+                height: (22rem/32);
+                background-image: url('../image/biao.png');
+                background-repeat: no-repeat;
+                background-size: (22rem/32) (22rem)/32;
+                position: absolute;
+                left: (28rem/32);
+                bottom: (30rem/32);
+            }
+        }
+        h1 {
+            font-size: (41rem/32);
+            color: @headerCol;
+        }
+        .shuang {
+            margin-top: (17rem/32);
+            display: block;
+            font-size: (23rem/32);
+            color: @mainDgre;
+        }
+        p {
+            float: left;
+            margin-left: (34rem/32);
+            margin-top: (59rem/32);
+            font-size: (17rem/32);
+            color: @headerCol;
+        }
+        .yqq {
+            width: 100%;
+            height: (6rem/32);
+            background-image: url('../image/yqq.png');
+            background-size: (24rem/32) (6rem/32);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        .yq {
+            width: 100%;
+            height: (6rem/32);
+            background-image: url('../image/yq.png');
+            background-size: (24rem/32) (6rem/32);
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+        // .yqq {
+        //     display: inline-block;
+        //     background-image: url('../image/yq.png');
+        //     // background-repeat: repeat-x;
+        //     background-size: (24rem/32) (6rem/32);
+        //     position: absolute;
+        //     left: 0;
+        //     bottom: 0;
+        // }
+        .jijiang {
+            float: right;
+            width: (98rem/32);
+            // height: (33rem/32);
+            text-align: center;
+            line-height: (33rem/32);
+            background-color: rgba(0,0,0,0.3);
+            font-size: (20rem/32);
+            color: @mainL;
+            margin-top: (56rem/32);
+        }
+        .jks {
+            width: (146rem/32);
+            height: (146rem/32);
+            background-image: url('../image/sale.png');
+            background-repeat: no-repeat;
+            background-size: (146rem/32) (146rem/32);
+            position: absolute;
+            top: -(30rem/32);
+            right: 0;
+        }
+        .bj {
+            width: 100%;
+            line-height: (82rem/32);
+            position: relative;
+        }
+        ul {
+            width: 100%;
+            overflow: hidden;
+        }
+        li {
+            width: 50%;
+            text-align: center;
+            font-size: (23rem/32);
+        }
+        a {
+            width: 100%;
+            color: @mainSpc;
+        }
+        .bjj {
+            position: relative;
+            float: left;
+            i {
+                width: (24rem/32);
+                height: (24rem/32);
+                background-image: url('../image/fx.png');
+                background-repeat: no-repeat;
+                background-size: (24rem/32) (24rem)/32;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -(110rem/32/2);
+                margin-top: -(24rem/32/2);
+            }
+        }
+        .fx {
+            position: relative;
+            float: right;
+            i {
+                width: (25rem/32);
+                height: (27rem/32);
+                background-image: url('../image/share.png');
+                background-repeat: no-repeat;
+                background-size: (25rem/32) (27rem)/32;
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -(110rem/32/2);
+                margin-top: -(27rem/32/2);
+            }
+        }
+        .xian {
+            width: (1rem/32);
+            height: (47rem/32);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -(47rem/64);
+            background-color: @mainBotBo;
+        }
+    }
+    .second {
+        height: (232rem/32);
+        .all {
+            padding: (10rem/32) (31rem/32);
+            background-color: @mainP;
+        }
+        h1 {
+            font-weight: normal;
+        }
+        b {
+            font-size: (69rem/32);
+        }
+        a {
+            font-size: (24rem/32);
+            color: @mainJ;
+        }
+        .shuang {
+            margin-top: (55rem/32);
+            color: @headerCol;
+        }
+        p {
+            margin-top: (10rem/32);
+        }
+        .jijiang {
+            margin-top: 0;
+            color: @mainPl;
+        }
+    }
+    .third {
+        height: (314rem/32);
+        li {
+            float: left;
+            width: (195rem/32);
+        }
+        .yll {
+            width: (32rem/32);
+            height: (18rem/32);
+            // background-color: red;
+            background-image: url('../image/yl.png');
+            background-repeat: no-repeat;
+            background-size: (32rem/32) (18rem/32);
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            margin-left: -(125rem/32/2);
+            margin-top: -(20rem/32/2);
+        }
+       
+        .fx {
+            float: left;
+            i {
+                width: (23rem/32);
+                height: (27rem/32);
+                background-image: url('../image/fxx.png');
+                background-repeat: no-repeat;
+                background-size: (23rem/32) (27rem/32);
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -(125rem/32/2);
+                margin-top: -(30rem/32/2);
+            }
+        }
+        .bjj {
+            .zf {
+                width: (23rem/32);
+                height: (27rem/32);
+                // background-color: red;
+                background-image: url('../image/sc.png');
+                background-repeat: no-repeat;
+                background-size: (23rem/32) (27rem/32);
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                margin-left: -(125rem/32/2);
+                margin-top: -(30rem/32/2);
+            }
+        }
+       
+    }
+}
+footer {
+    width: 100%;
+    padding: 0 (24rem/32);
+    box-sizing: border-box;
+    margin-top: (80rem/32);
+    h2 {
+        font-size: (21rem/32);
+        color: @footerCol;
+        font-weight: normal;
+    }
+    span {
+        display: block;
+        width: 100%;
+        font-size: (23rem/32);
+        height: (58rem/32);
+        line-height: (58rem/32);
+        color: @footerCol;
+    }
+}
