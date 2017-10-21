@@ -1,0 +1,183 @@
+html,body {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+.sjd {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 44px;
+    background-image: url("../image/header-bg.png");
+    background-size: 1px 44px;
+    background-repeat: repeat-x;
+}
+header .search {
+    width: 100%;
+    height: 100%;
+    padding: 0 50px;
+    box-sizing: border-box;
+    /*margin: 0 auto;*/
+    /*text-align: center;*/
+}
+header .search input {
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    margin-top: 6px;
+    border: 1px solid #ccc;
+    padding-left: 8px;
+    box-sizing: border-box;
+}
+header .back {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-image: url("../image/jd-sprites.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: -20px 2px;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+header .list {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 40px;
+    height: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    background-image: url("../image/jd-sprites.png");
+    background-size: 200px 200px;
+    background-repeat: no-repeat;
+    background-position: -60px 2px;
+    background-origin: content-box;
+    background-clip: content-box;
+}
+main {
+    padding-top: 44px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+}
+main aside {
+    width: 90px;
+    /*height: 100%;*/
+    /*float: left;*/
+    overflow: hidden;
+}
+main aside ul {
+    width: 100%;
+    /*overflow: hidden;*/
+}
+main aside li {
+    text-align: center;
+    /*float: left;*/
+    width: 100%;
+    /*height: 50px;*/
+    line-height: 50px;
+    font-size: 13px;
+    background-color: #f7f7f7;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+}
+main aside li:nth-child(1) {
+    background-color: #fff;
+    border-right: none;
+}
+main aside li:nth-child(1) a {
+    color: red;
+}
+main article {
+    flex: 1;
+    /*height: 100%;*/
+    /*width: 100%;*/
+    padding: 20px 10px;
+    /*padding-bottom: 60px;*/
+    /*background-color: pink;*/
+    box-sizing: border-box;
+    overflow-y: scroll;
+}
+main article .tuijian {
+    width: 100%;
+}
+main .tuijian h2 {
+    font-size: 13px;
+    /*line-height: 50px;*/
+    color: #666;
+}
+main .tuijian ul {
+    margin-top: 16px;
+    width: 100%;
+    overflow: hidden;
+    border-top: 1px solid #ccc;
+    border-left: 1px solid #ccc;
+}
+main .tuijian li {
+    width: 33.3333%;
+    height: 50px;
+    float: left;
+    box-sizing: border-box;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    line-height: 50px;
+    text-align: center;
+    font-size: 13px;
+}
+
+
+
+
+main .daogou {
+    width: 100%;
+    /*height: 100%;*/
+    overflow: hidden;
+}
+main .daogou h2 {
+    margin-top: 15px;
+    font-size: 13px;
+    /*line-height: 50px;*/
+    color: #666;
+}
+main .daogou ul {
+    width: 100%;
+    overflow: hidden;
+}
+main .daogou li {
+    float: left;
+    width: 33.333%;
+    padding: 0 5px;
+    box-sizing: border-box;
+    text-align: center;
+}
+main .daogou a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+main .daogou img {
+    width: 100%;
+}
+main .daogou span {
+    display: block;
+    margin-top: 3px;
+    font-size: 12px;
+}
+
