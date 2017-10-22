@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var startX,startY,endX,endY;
+        document.addEventListener('touchstart',function(e){
+            var touches = e.targetTouches[0];
+            startX = touches.clientX;
+            startY = touches.clientY;
+        })
+        document.addEventListener('touchmove',function(e){
+            var touches = e.changedTouches[0];
+            var y = touches.clientY;
+            console.log(y);
+        })
+        document.addEventListener('touchend',function(e){
+            var touches = e.changedTouches[0];
+            endX = touches.clientX;
+            endY = touches.clientY;
+
+            Math.abs(endX-startX)>Math.abs(endY-startY)?(endX>startX)?alert('向右'):alert('向左'):(endY<startY)?alert('向上'):alert('向下');
+        })
+    </script>
+</body>
+</html>
